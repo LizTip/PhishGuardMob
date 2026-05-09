@@ -1,6 +1,6 @@
 # PhishGuard AI - Mobile Front-end
 
-A modern Android application built with **Kotlin** and **Jetpack Compose** for phishing detection. This app serves as the mobile interface for the PhishGuard AI system, communicating with a Python FastAPI backend to analyze URLs for potential phishing threats.
+A modern Android application built with **Kotlin** and **Jetpack Compose** for phishing detection. This app serves as the mobile interface for the PhishGuard AI system, communicating with a Python FastAPI backend to analyse URLs for potential phishing threats.
 
 ## 🚀 Key Features
 
