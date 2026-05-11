@@ -21,7 +21,7 @@ The application follows **Clean Architecture** principles and the **MVVM (Model-
 *   **ViewModel**: Manages UI state and handles business logic using Kotlin Coroutines for asynchronous operations.
 *   **Repository Pattern**: Acts as the single source of truth, coordinating data flow between the **Retrofit API** and the **Room Database**.
 *   **Data Layer**:
-    *   **Retrofit**: Handles HTTP communication with the FastAPI backend.
+    *   **Retrofit**: Handles HTTP communication with the [PhishGuard Backend](https://github.com/LizTip/PhishGaurdBackend.git).
     *   **Room**: Manages local SQLite persistence for scan history.
 
 ## 🛠️ Technical Stack
@@ -36,7 +36,7 @@ The application follows **Clean Architecture** principles and the **MVVM (Model-
 ## 📋 Requirements
 
 *   **Android Device/Emulator**: API Level 26 (Android 8.0) or higher.
-*   **Backend**: Requires the [PhishGuard Backend](https://github.com/LizTip/PhishGuard_Backend) (FastAPI) to be running.
+*   **Backend**: Requires the [PhishGuard Backend](https://github.com/LizTip/PhishGaurdBackend.git) (FastAPI) to be running.
     *   *Note: For physical devices, ensure the backend is started with `--host 0.0.0.0` and update `RetrofitClient.kt` with your local IP.*
 
 ## 🧑‍💻 Academic Context
