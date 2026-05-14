@@ -4,64 +4,53 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Scale group: Shrinks the content to 80% to fit the safe zone -->
+    <!-- Scale group to ensure the shield fits within the circular 'safe zone' -->
     <group
         android:pivotX="54"
         android:pivotY="54"
-        android:scaleX="0.8"
-        android:scaleY="0.8">
+        android:scaleX="0.7"
+        android:scaleY="0.7">
 
-        <!-- Outer Shield Border (Security Context) -->
+        <!-- Main Security Shield (Dark Blue) -->
         <path
-            android:pathData="M54,15 C40,15 25,20 25,20 V50 C25,75 54,90 54,90 C54,90 83,75 83,50 V20 C83,20 68,15 54,15Z"
+            android:pathData="M54,10 C35,10 20,16 20,16 V50 C20,80 54,98 54,98 C54,98 88,80 88,50 V16 C88,16 73,10 54,10Z"
+            android:fillColor="#0D47A1"
             android:strokeColor="#FFFFFF"
-            android:strokeWidth="2.5"
-            android:fillColor="#1565C0"/>
+            android:strokeWidth="2"/>
 
-        <!-- The Fish (Recognizable Shape) -->
-        <!-- Tail Fin -->
+        <!-- Shield Accent (Lighter blue shading on the left) -->
         <path
-            android:pathData="M72,52 L84,42 L84,62 Z"
-            android:fillColor="#81C784"/>
+            android:pathData="M54,15 V90 C54,90 28,75 28,50 V20 C28,20 40,15 54,15Z"
+            android:fillColor="#FFFFFF"
+            android:fillAlpha="0.1"/>
 
-        <!-- Body & Head (Pointed head to the left) -->
+        <!-- The Fishing Hook (Central J-Shape) -->
+        <!-- Hook Loop (Eye at the top) -->
         <path
-            android:pathData="M32,52 C32,52 45,38 72,45 C78,52 78,52 72,59 C45,66 32,52 32,52 Z"
-            android:fillColor="#A5D6A7"/>
+            android:pathData="M54,28 A4.5,4.5 0 1,1 54,28.1 Z"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:fillColor="#00000000"/>
 
-        <!-- Top Fin -->
+        <!-- Hook Stem, Curve and Point -->
         <path
-            android:pathData="M50,42 L58,34 L62,43 Z"
-            android:fillColor="#81C784"/>
+            android:pathData="M54,32 V62 Q54,80 38,80 Q28,80 28,68 L34,68 Q34,74 38,74 Q48,74 48,62 V32"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="5"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"/>
 
-        <!-- Eye (Making it look alive) -->
+        <!-- Hook Barb (Pointy part) -->
         <path
-            android:pathData="M40,50 A2,2 0 1,1 40,50.1 Z"
+            android:pathData="M34,68 L30,62 L38,62 Z"
             android:fillColor="#FFFFFF"/>
-        <path
-            android:pathData="M40,50 A0.8,0.8 0 1,1 40,50.1 Z"
-            android:fillColor="#000000"/>
 
-        <!-- The Hook (Catching the Phish) -->
+        <!-- Fishing Line (connecting to the top) -->
         <path
-            android:pathData="M54,12 V35 Q54,45 44,45 Q38,45 38,40 L36,42 Q36,50 44,50 Q58,50 58,35 V12"
-            android:strokeColor="#E0E0E0"
+            android:pathData="M54,12 V24"
+            android:strokeColor="#FFFFFF"
             android:strokeWidth="2.5"
             android:strokeLineCap="round"/>
 
-        <!-- Small Safety Badge at Bottom -->
-        <path
-            android:pathData="M54,68 C48,68 42,70 42,70 V80 C42,86 54,90 54,90 C54,90 66,86 66,80 V70 C66,70 60,68 54,68Z"
-            android:fillColor="#2E7D32"
-            android:strokeColor="#FFFFFF"
-            android:strokeWidth="1.5"/>
-
-        <!-- Checkmark inside badge -->
-        <path
-            android:pathData="M49,80 L53,84 L60,76"
-            android:strokeColor="#FFFFFF"
-            android:strokeWidth="2.2"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round"/>
     </group>
 </vector>

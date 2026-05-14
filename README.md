@@ -2,6 +2,12 @@
 
 A modern Android application built with **Kotlin** and **Jetpack Compose** for phishing detection. This app serves as the mobile interface for the PhishGuard AI system, communicating with a Python FastAPI backend to analyse URLs for potential phishing threats.
 
+## 📖 User Guide
+
+For detailed setup instructions, system requirements, and usage examples, please refer to the full documentation:
+
+👉 **[Download Full User Guide (PDF)](./USER_GUIDE.pdf)**
+
 ## 🚀 Key Features
 
 *   **Real-time URL Scanning**: Paste or share a URL to immediately check its safety status.
